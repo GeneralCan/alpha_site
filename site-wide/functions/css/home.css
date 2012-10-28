@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Andika);
+
+/*--clock--*/
+#clock_n_join {
+	position: absolute;
+	left: 100px;
+	top: 569px;
+	width: 650px;
+	height: 127px;
+	z-index: 23;
+}
+#countbox1 {
+	position:absolute;
+	left:90px;
+	top:2px;
+	width:474px;
+	height:87px;
+	font-size:74px;
+	font-family:Myriad pro;
+	font-weight:600;
+	word-spacing:30px;
+	color:#08F;
+	z-index:24;
+}
+#weeks {
+	position:absolute;
+	left:31px;
+	top:104px;
+	width:65px;
+	height:26px;
+	z-index:22;
+}
+#days {
+	position:absolute;
+	left:97px;
+	top:83px;
+	width:56px;
+	height:28px;
+	z-index:23;
+}
+#hours {
+	position:absolute;
+	left:217px;
+	top:83px;
+	width:63px;
+	height:30px;
+	z-index:24;
+}
+#minutes {
+	position:absolute;
+	left:339px;
+	top:83px;
+	width:69px;
+	height:24px;
+	z-index:25;
+}
+#secs {
+	position:absolute;
+	left:459px;
+	top:83px;
+	width:85px;
+	height:26px;
+	z-index:2;
+}
+/*-----------------------*/
+
+
+#contain {
+	width: 100%;
+}
+
+ul.slideshow {
+	list-style:none;
+	width:960px;
+	height:300px;
+	overflow:hidden;
+	position: relative;
+	margin:0;
+	padding:0;
+	
+}	
+
+ul.slideshow li {
+	position: absolute;
+	left:0;
+}
+
+ul.slideshow li.show {
+	z-index:10;	
+}
+
+ul img {
+	border:none;	
+}
+
+
+#slideshow-caption {
+	width:250px;
+	height:300px;
+	position:absolute;
+	bottom:0;
+	left: 670px;	
+	color:#fff;
+	background:#3b3b3b;
+	z-index:10;
+}
+
+#slideshow-caption .slideshow-caption-container {
+	margin-right: 0px;
+	padding:5px 10px;		
+	z-index:10;
+}
+
+#slideshow-caption h3 {
+	margin:0;
+	padding:0;	
+	font-size:24px;
+}
+
+#slideshow-caption p {
+	margin:5px 0 0 0;
+	padding:0;
+}
+
+#lock1 {
+	margin-left: 100px;
+	width: 30px;
+	height: 40px;
+	background-image: url('../../images/lock_grey.png');
+	background-repeat:no-repeat;
+    cursor:pointer;
+}
+
+#join {
+	position: absolute;
+	padding-left: 0px;
+	text-align: left;
+	width: 300px;
+	height: 400px;
+	font-size: 14px;
+	font-family: 'helvetica';
+	color: #7f7f7f
+}
+
+#share {
+
+	padding-left: 330px;
+	position: absolute;
+	text-align: left;
+	width: 300px;
+	height: 400px;
+	font-size: 14px;
+	font-family: 'helvetica';
+	color: #7f7f7f
+}
+
+#unlock {
+	padding-left: 660px;
+	text-align: left;
+	width: 300px;
+	height: 400px;
+	font-size: 14px;
+	font-family: 'helvetica';
+	color: #7f7f7f
+}
+#par {
+	margin-top: 5px;
+}
+
+#btn {
+	margin-top: 120px;
+}
+
+#btn2 {
+	position: absolute;
+	display: inline-block;
+	left: 808px;
+	top: 586px;
+}
+
+#learn {
+	color: #149414
+}
+
+#ptitle {
+	font-size: 23px;
+	font-family: 'Francois One', sans-serif;
+	color: #29ABE2;	
+}
+
+h1 {
+	padding-top: 20px;
+	font-size: 40px;
+	font-family: 'Francois One', sans-serif;
+	color: #29ABE2;
+}
+
+a {
+	color: #333
+}
+
+h2 {
+	font-size: 28px;
+	font-family: 'News Cycle', sans-serif;
+	color: #333;
+}
+
+h3 {
+	text-align: left;
+    margin: 5px 10px 5px;
+	font-size: 30px;
+	font-family: 'Bree Serif', sans-serif;
+	color: #333
+	margin-bottom: 10px;
+}
+
+
+.tile {
+	padding-top: 15px;
+}
+
+.box {
+	top: 80px;
+	height: 610px;
+	width: auto;
+	background-image: url(../../images/light_toast.png);
+	-webkit-box-shadow: 0 8px 6px -6px #777;
+	-moz-box-shadow: 0 8px 6px -6px #777;
+	box-shadow: 0 8px 6px -6px #777;
+}
+
+#how {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+#yo {
+	text-align: left;
+}
+
+#so {
+	margin-left: 30px;
+}
+
+#content {
+	text-align: left;
+	width: 960px;
+	margin: 5px;
+	border-radius: 3px;
+	height: 440px;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+button.cupid-green {
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  color: #fff;
+  font: bold 30px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding: 7px 0 8px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  width: 500px; 
+}
+
+button.cupid-green:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; 
+}
+
+ button.cupid-green:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto 0;
+}
+
+.progress {
+    overflow: hidden;
+    height: 45px;
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f9f9f9', GradientType=0);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button.cupid-green1 {
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  color: #fff;
+  font: bold 20px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding: 7px 0 8px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  width: 340px; }
+  
+button.cupid-green1:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; 
+}
+  
+button.cupid-green1:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}

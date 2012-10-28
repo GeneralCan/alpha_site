@@ -1,0 +1,103 @@
+body {
+	background-image:url(site-wide/light_toast.png);
+	text-align:center;
+	margin:auto;
+}
+
+div {
+  top:50%;
+  left:50%;
+  width:32px;
+  height:0;
+  margin:-16px 0 0 -16px;
+  padding-top:32px;
+  position:absolute;
+  overflow:hidden;
+}
+div * {
+  position:absolute;
+  width:25%;
+  height:25%;
+  background:rgb(93, 108, 127);
+  
+  -webkit-border-radius:16px;
+  -moz-border-radius:16px;
+  border-radius:16px;
+  
+  -webkit-animation:spinner 1s linear infinite;
+  -moz-animation:spinner 1s linear infinite;
+  animation:spinner 1s linear infinite;
+  
+  -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, .7) inset, 0 1px 0 rgba(255, 255, 255, .7);
+  -moz-box-shadow:0 1px 0 rgba(0, 0, 0, .7) inset, 0 1px 0 rgba(255, 255, 255, .7);
+  box-shadow:0 1px 0 rgba(0, 0, 0, .7) inset, 0 1px 0 rgba(255, 255, 255, .7);
+}
+
+@-webkit-keyframes spinner {
+  0% { opacity:1; }
+  100% { opacity:.1; }
+}
+@-moz-keyframes spinner {
+  0% { opacity:1; }
+  100% { opacity:.1; }
+}
+@keyframes spinner {
+  0% { opacity:1; }
+  100% { opacity:.1; }
+}
+
+div :nth-child(1) {
+  top: 0; right:12px;
+  opacity:1;
+  -webkit-animation-delay:.125s;
+  -moz-animation-delay:.125s;
+  animation-delay:.125s;
+}
+div :nth-child(2) {
+  top:4px; right:4px;
+  opacity:.9;
+  -webkit-animation-delay:.25s;
+  -moz-animation-delay:.25s;
+  animation-delay:.25s;
+}
+div :nth-child(3) {
+  top:12px; right:0;
+  opacity:.8;
+  -webkit-animation-delay:.375s;
+  -moz-animation-delay:.375s;
+  animation-delay:.375s;
+}
+div :nth-child(4) {
+  bottom:4px; right:4px;
+  opacity:.7;
+  -webkit-animation-delay:.5s;
+  -moz-animation-delay:.5s;
+  animation-delay:.5s;
+}
+div :nth-child(5) {
+  bottom:0;
+  right:12px;
+	opacity:.6;
+  -webkit-animation-delay:.625s;
+}
+div :nth-child(6) {
+  bottom:4px; left:4px;
+  opacity:.5;
+  -webkit-animation-delay:.75s;
+  -moz-animation-delay:.75s;
+  animation-delay:.75s;
+}
+div :nth-child(7) {
+  bottom:12px; left:0;
+  opacity:.4;
+  -webkit-animation-delay:.875s;
+  -moz-animation-delay:.875s;
+  animation-delay:.875s;
+}
+div :nth-child(8) {
+  top:4px; left:4px;
+  opacity:.3;
+  -webkit-animation-delay:.975s;
+  -moz-animation-delay:.975s;
+  animation-delay:.975s;
+}​

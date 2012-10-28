@@ -1,0 +1,428 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;} /* remember to define focus styles! */ :focus {outline: 0;} 
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */ 
+table {border-collapse: collapse;border-spacing: 0;}
+
+/*body styles and settings */
+body {
+	text-align: center;
+	background-image:url(../../images/subtle_freckles.png)
+}
+nav {
+	position:relative;
+	width: 100%;
+	height: 80px;
+	margin:auto;
+	background-image:url(../../images/concrete_wall.png)
+}
+#footer {
+	position:absolute;
+	width: 100%;
+	height: 80px;
+	bottom:0px;
+	margin:auto;
+	background-image:url(../../images/concrete_wall.png)
+
+}
+	
+ul > li {display: inline-block;}
+nav ul li a {margin-left: 60px;}
+nav ul {text-align: right;}
+P {line-height: 1.5;}
+a {text-decoration: none; color:inherit;}
+
+/*nav styles -----------------------------------------*/
+#cont{
+	width:960px;
+	margin:0 auto 0;
+	height:auto;
+}
+#welcomeDiv {
+	display: block;
+	font-family: "helvetica";
+	font-size: 14px;
+	background-image: url(../../images/concrete_wall.png);
+	color: #777;
+	position: absolute;
+	left: 1050px;
+	top: 32px;
+	width: 199px;
+	height: 33px;
+	z-index: 26;
+}
+nav ul {
+	text-align: right;
+}
+
+nav ul li a {
+	margin-left: 60px;
+}
+
+
+nav ul li {
+	font: 13px Verdana, 'Lucida Grande';
+	cursor: pointer;
+	-webkit-transition: padding .05s linear;
+	-moz-transition: padding .05s linear;
+	-ms-transition: padding .05s linear;
+	-o-transition: padding .05s linear;
+	transition: padding .05s linear;
+}
+
+nav ul li.drop {
+	position: relative;
+}
+
+nav ul > li {
+	display: inline-block;
+}
+
+nav ul li a {
+	line-height: 80px;
+	height: 80px;
+	color: #777;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+nav ul li a:hover {
+	color: #777;
+}
+
+nav .dropOut .triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+nav .dropdownContain {
+	width: 160px;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -50px; /* half of width */
+	top: -400px;
+	z-index:25;
+}
+nav .dropOut {
+	width: 160px;
+	background: white;
+	float: left;
+	position: relative;
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+
+nav .dropOut ul {
+	float: left;
+	padding: 10px 0;
+}
+nav .dropOut ul li {
+	text-align: left;
+	float: left;
+	width: 125px;
+	padding: 12px 0 10px 15px;
+	margin: 0px 10px;
+	color: #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-o-transition: background .1s ease-out;
+	transition: background .1s ease-out;
+}
+
+nav .dropOut ul li:hover {
+	background: #29ABE2;
+	color: #fff;
+}
+
+nav ul li:hover a { color: #fff; }
+nav ul li:hover .dropdownContain { top: 65px; }
+nav ul li:hover .underline { border-bottom-color: #777; }
+nav ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+
+/*end nav style -------------------------------------------*/
+
+#wrapper {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:60px;
+	width: 960px;
+	height: 600px;
+	top:0px;
+}
+#logo {
+	background-image:url(../../images/logo.png);
+	background-repeat:no-repeat;
+	position: absolute;
+	width: 164px;
+	height: 29px;
+	top: 24px;
+}
+
+/*error visual styles*/
+.ErrorField {border-color: #D00; color: #D00; background: #FFFFFE;}
+span.ValidationErrors {display: inline-block; font-size: 12px; color: #D00; padding-left: 10px; font-style: italic;}
+
+/*form validation styles-------------------------------------------------------------------------*/
+.hover { border: 5px; color:#39F;}
+img {border:0px;}
+.title{font-family: Arial; font-size: 24px; color:#000; font-weight:600;}
+.letters2{font-family: Candara; font-size: 17px; color:#CCC; font-weight:700;}
+.bold-text {font-family:Arial; font-weight:600; color:#333;}
+
+input, .textarea {
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	color:#666;  
+    width: 200px; 
+	height:25px;   
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+    }   
+.textarea {max-width: 400px;line-height: 75%;}  
+.longbox{width:440px;}
+
+input:hover, textarea:hover,input:focus, textarea:focus {  
+    border-color: #C9C9C9;  
+    -webkit-box-shadow: rgba(0, 0, 0, .3) 0px 0px 8px;  
+    }  
+.submit input {width: auto;height:40px;padding: 1px 15px;background: #7ac943;border: 0;font-size: 20px;color: #FFFFFF;font-family:"myriad pro";-moz-border-radius: 5px;-webkit-border-radius: 5px;}  
+/*end effects-------------------------------------------------------------------------*/
+
+/*begin fade division------------------------------------------------------------------*/
+#fade {
+	display:none;
+    position: absolute;
+	background-image:url(../../images/fade.png);
+    left: 0px;
+    top: 0px;
+	text-align:left;
+    width: 100%;
+    height: 150%;
+	font-family: "Myriad Pro";
+    z-index: 25;
+}
+
+/*--registration base--*/
+#reg {
+	display:none;
+	position:relative;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	top:100px;
+	width:580px;
+	height:700px;
+	z-index:20;
+}
+#reg-title {
+	position:absolute;
+	left:11px;
+	top:7px;
+	color:#09F;
+	font-size:40px;
+	font-weight:500;
+	font-family:Myriad Pro;
+	width:447px;
+	height:50px;
+	z-index:21;
+}
+#apDiv2 {/*content holder for registration section header*/
+	position:absolute;
+	left:19px;
+	top:59px;
+	width:283px;
+	height:58px;
+	z-index:21;
+	line-height:15px;
+	font-style: italic;
+	color: #777;
+}
+#title {
+	position:absolute;
+	left:-5px;
+	top:-15px;
+	width:219px;
+	height:21px;
+	z-index:2;
+}
+#fade #reg #apDiv2 #title {font-family: "Myriad Pro";font-weight: bold;font-size: 18px;}
+#fade #reg #apDiv2 #content1 {font-size: 16px;}
+
+#apDiv3 {
+	position: absolute;
+	left: 242px;
+	top: 58px;
+	width: 58px;
+	height: 38px;
+	z-index: 3;
+	font-size: 45px;
+	font-weight: bold;
+	font-style: normal;
+	color: #999;
+}
+#apDiv4 {
+	position:absolute;
+	background-color:#999;
+	left:305px;
+	top:70px;
+	width:219px;
+	height:3px;
+	z-index:21;
+}
+#apDiv5 {
+	position:absolute;
+	background-color:#999;
+	left:12px;
+	top:70px;
+	width:219px;
+	height:3px;
+	z-index:21;
+}
+#apDiv6 {
+	position:absolute;
+	left:554px;
+	top:-23px;
+	width:43px;
+	height:43px;
+	z-index:3;
+}
+/*--registration form--*/
+#reg-form {
+	position:absolute;
+	left:36px;
+	top:152px;
+	width:509px;
+	height:514px;
+	z-index:21;
+}
+/*----Form fields--------------------------*/
+	#sect1 {position: absolute;left: 15px;top: 27px;width: 189px;height: 44px;z-index: 3;}
+	#sect2 {position: absolute;left: 256px;top: 27px;width: 194px;height: 44px;z-index: 3;}
+	#sect3 {position: absolute;left: 15px;top: 90px;width: 193px;height: 48px;z-index: 3;}
+	#sect4 {position: absolute;left: 256px;top: 90px;width: 181px;height: 46px;z-index: 3;}
+	#sect5 {position: absolute;left: 15px;top: 158px;width: 184px;height: 50px;z-index: 3;}
+	#sect6 {
+	position: absolute;
+	left: 15px;
+	top: 230px;
+	width: 443px;
+	height: 50px;
+	z-index: 3;
+}
+	#sect7 {
+	position: absolute;
+	left: 15px;
+	top: 297px;
+	width: 182px;
+	height: 50px;
+	z-index: 3;
+}
+	#sect8 {
+	position: absolute;
+	left: 256px;
+	top: 297px;
+	width: 184px;
+	height: 50px;
+	z-index: 3;
+}
+/*----end form fields----------------------*/
+
+#apDiv7 {/*raffleize policy paragraph*/
+	font-family: "Myriad Pro";
+	font-size: 10px;
+	color: #333;
+	position: absolute;
+	left: 0px;
+	top: 451px;
+	width: 321px;
+	height: 69px;
+	z-index: 21;
+	font-style: italic;
+	font-weight: bold;
+}
+#apDiv8 {
+	position: absolute;
+	left: 396px;
+	top: 459px;
+	width: 107px;
+	height: 49px;
+	z-index: 21;
+}
+/*--end registration form--*/
+
+/*--login base--*/
+#log {
+	display:none;
+	position:relative;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	top:100px;
+	width:580px;
+	height:250px;
+	z-index:20;
+}
+	#apDiv9 {
+	position: absolute;
+	left: 11px;
+	top: 7px;
+	color: #09F;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: Myriad Pro;
+	width: 134px;
+	height: 50px;
+	z-index: 21;
+}
+/*--login form--*/
+    #logForm {
+	position: absolute;
+	left: 38px;
+	top: 11px;
+	width: 506px;
+	height: 238px;
+	z-index: 21;
+}
+/*----Form fields--------------------------*/
+    #apDiv10 {position: absolute;left: 25px;top: 61px;width: 423px;height: 36px;z-index: 21;}
+    #apDiv11 {position: absolute;left: 25px;top: 125px;width: 405px;height: 31px;z-index: 22;}
+    #apDiv12 {position: absolute;left: 404px;top: 183px;width: 100px;height: 43px;z-index: 21;}
+    #apDiv13 {position: absolute;left: 545px;top: -28px;width: 61px;height: 59px;z-index: 21;}
+/*----end form fields----------------------*/
+/*end fade division--------------------------------------------------------------------------*/

@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Andika);
+
+#words {
+	padding-bottom: 15px;
+	margin: 10px;
+	text-align: left;
+	width: 300px;
+	font-size: 14px;
+	font-family: 'helvetica';
+	color: #7f7f7f
+}
+
+#par {
+	padding-top: 15px;
+}
+
+#btn {
+	margin-top: 25px;
+}
+
+#learn {
+	color: #149414
+}
+
+#ptitle {
+	font-size: 23px;
+	font-family: 'Francois One', sans-serif;
+	color: #29ABE2;	
+}
+
+h1 {
+	padding-top: 20px;
+	font-size: 40px;
+	font-family: 'Francois One', sans-serif;
+	color: #29ABE2;
+}
+
+a {
+	color: #333
+}
+
+h2 {
+	font-size: 28px;
+	font-family: 'News Cycle', sans-serif;
+	color: #333;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: 'Bree Serif', sans-serif;
+	color: #333
+	margin-bottom: 10px;
+}
+
+img {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#lead {
+	padding-top: 120px;
+}
+
+.tile {
+	padding-top: 15px;
+}
+
+.box {
+	top: 80px;
+	height: 560px;
+	width: auto;
+	background-image: url('light_toast.png');
+	-webkit-box-shadow: 0 8px 6px -6px #777;
+	-moz-box-shadow: 0 8px 6px -6px #777;
+	box-shadow: 0 8px 6px -6px #777;
+}
+
+#how {
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+#content {
+	width: 320px;
+	margin: 5px;
+	border-radius: 3px;
+	height: 400px;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+div.fundable-ui-v2 .btn.custom2.primary,
+div.fundable-ui-v2 .btn.custom2.success,
+div.fundable-ui-v2 .btn.custom2.danger
+{
+	color: #FFF;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+}
+div.fundable-ui-v2 .btn.custom2.big
+{
+	padding: 19px 40px;
+	font-size: 16px;
+	border-radius:5px;
+}
+div.fundable-ui-v2 .btn.custom2.full-width
+{
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+div.fundable-ui-v2 .btn.custom2.biggish
+{
+	padding: 10px 20px;
+	font-size: 14px;
+}
+div.fundable-ui-v2 .btn.custom2.small
+{
+	padding: 4px 8px;
+	font-size: 12px;
+}
+div.fundable-ui-v2 .btn.custom2.tiny
+{
+	padding: 2px 4px;
+	font-size: 10px;
+}
+div.fundable-ui-v2 .btn.custom2
+{
+	padding: 6px 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: rgba(0,0,0,.6);
+	margin: 0 -1px;
+}
+div.fundable-ui-v2 .btn.custom
+{
+	border-radius:3px;
+	margin: 0 2px;
+}
+
+button.cupid-green {
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  color: #fff;
+  font: bold 30px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding: 7px 0 8px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  width: 400px; }
+  button.cupid-green:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; }
+  button.cupid-green:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }

@@ -1,0 +1,14 @@
+@font-face {
+	font-family: MP_bold;
+	src: url('fonts/MyriadPro-Bold.otf');
+}
+
+@font-face {
+	font-family: MP_regular;
+	src: url('fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+	font-family: MP_semibold;
+	src: url('fonts/MyriadPro-Semibold.otf');
+}
