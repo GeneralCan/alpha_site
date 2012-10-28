@@ -14,6 +14,7 @@
 
   //require("site-wide/effects/social.php");
   //fb_count();
+  
   // Connect to DB
   mysql_connect ($someHost, $usrname, $password) or die ('Error: ' . mysql_error());
   
@@ -57,14 +58,24 @@
         
 <!--style sheets-->
         <link rel="stylesheet" type="text/css" href="site-wide/functions/css/globalR.css" />
-        <link rel="stylesheet" type="text/css" href="site-wide/functions/css/homeR.css" />
+        <link rel="stylesheet" type="text/css" href="site-wide/functions/css/homeR.css" /> 
+        <link rel='stylesheet' id='style-css'  href="site-wide/functions/css/diapo.css" type='text/css' media='all' /> 
        
-<!--javascripts to load -->
-        <script type="text/javascript" src="site-wide/functions/js/jquery-1.3.1.min.js"></script>
+<!--javascripts to load
+        <script type="text/javascript" src="site-wide/functions/js/jquery-1.3.1.min.js"></script> -->
+        <script type='text/javascript' src='site-wide/functions/js/jquery.min.js'></script> 
   		<script type="text/javascript" src="site-wide/functions/js/functions.js"></script>
   		<script type="text/javascript" src="site-wide/functions/js/jquery.validate.js"></script>
   		<script type="text/javascript" src="site-wide/functions/js/jquery.validation.functions.js"></script>
         <script type="text/javascript" src="site-wide/functions/js/jquery.realperson.min.js"></script>
+
+ 
+<!--slideshow script-->
+<!--[if !IE]><!--><script type='text/javascript' src='site-wide/functions/js/jquery.mobile-1.0rc2.customized.min.js'></script><!--<![endif]-->
+		<script type='text/javascript' src='site-wide/functions/js/jquery.easing.1.3.js'></script> 
+		<script type='text/javascript' src='site-wide/functions/js/jquery.hoverIntent.minified.js'></script> 
+	<script type='text/javascript' src='site-wide/functions/js/diapo.js'></script> 
+
 
 <!--share this buttons 
  	 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -72,6 +83,20 @@
   -->
   <style type="text/css">
   @import "site-wide/functions/css/jquery.realperson.css";
+  
+ 
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+section {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
   #realPerson {
 	position: absolute;
 	left: 57px;
@@ -84,15 +109,21 @@
   #apDiv1 {
 	position: absolute;
 	left: 158px;
-	top: 0px;
+	top: 1px;
 	width: 350px;
 	height: 70px;
-	background-color:#E6E6E6;
+	background-color: #E6E6E6;
 	z-index: 1;
 }
   </style>
 <!--custom javascript functions-->
   		<script type="text/javascript">
+		//slideshow
+		$(function(){
+			$('.pix_diapo').diapo();
+		});
+		//end slideshow
+		
 		$(function() {
 			$('#defaultReal').realperson();
 		});
@@ -148,7 +179,7 @@
 			var maxP = "<?php echo $max_participants[0]; ?>";
 			//run the calculations for percentage
 			var pSignup = signups / maxP;
-			var total = 736 * pSignup;
+			var total = 948 * pSignup;
 			
 			//change the width of the given image based on the percent given
 			if(signups < 17){
@@ -182,8 +213,8 @@
 				}//end if
   
 			//if the total is greater than 550 then just set it as 550
-			if(total > 736){
-				total = 736;
+			if(total > 948){
+				total = 948;
 				}//end if
 			theImg = document.getElementById('progress');
 			theImg.width = total;
@@ -399,13 +430,54 @@
             <!--end sharing div-->
                         
             <!--slideshow-->
-            <div id="fold"></div>
-        <ul class="slideshow"><!--begin ul-->
-				<li class="show" onClick="javascript: joinraffle();"> <img src="site-wide/images/ipod.jpeg" width="960" height="400" title="8gb iPod Touch" alt="Who wouldn't want one of these?<br />&nbsp;&nbsp;&nbsp;_________________________<br /><br /> "></li>
-				<li><img src="site-wide/images/cupcake.jpeg" width="960" height="400" title="Slide 2" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></li>
-				<li><img src="site-wide/images/s3.gif" width="960" height="400" title="Slide 3" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."/></li>
-		</ul><!--end ul-->
-		<!--end slideshow-->
+   
+   	  <div style="overflow:hidden; width:960px; margin: 100px auto; padding:0 20px;"> 
+        <div class="pix_diapo">
+				
+                    <div data-time="8000">
+                        <img src="site-wide/images/content/megamind1048.jpg">
+                        <div class="caption elemHover fadeIn">
+					    <p class="title">$10 iTunes Gift Card</p></ br>
+					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. </p>
+					    <hr noshade size="2" width="298">
+					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+				    </div>
+				    <span class="elemHover fadeIn"><a class="button large green" href="javascript:joinraffle();">Enter to Win</a></span>
+				    <div id="social">
+					    <a href="#"><div id="twitter"></div></a>
+					    <a href="#"><div if="facebook"></div></a>
+				    </div>
+                    </div>
+				
+                    <div data-time="8000">
+                        <img src="site-wide/images/content/megamind_07.jpg">
+                        <div class="caption elemHover fadeIn">
+					    <p class="title">$15 Fandango Gift Card</p>
+					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
+					    <hr noshade size="2" width="298">
+					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+                        </div>
+				    <span class="elemHover fadeIn"><a class="button large green"  href="javascript:joinraffle();">Enter to Win</a></span>
+                    </div>
+				
+                    <div data-time="8000">
+                        <img src="site-wide/images/content/wall-e.jpg">
+                        <div class="caption elemHover fadeIn">
+					    <p class="title">8 GB iPod Touch</p>
+					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
+					    <hr noshade size="2" width="298">
+					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+                        </div>
+				    <span class="elemHover fadeIn"><a class="button large green"  href="javascript:joinraffle();">Enter to Win</a></span>
+                    </div>
+                    
+
+                    
+               </div><!-- #pix_diapo -->
+                
+        </div>
+
+	  <!--end slideshow-->
             
 		<!--/countdown clock\-->
 		<div id="clock_n_join">
@@ -422,7 +494,6 @@
 		<!--//Loading bar \\-->
 	  <div id="progressBar"><img src="site-wide/images/progressBar.png" width="" height="52" id="progress"/></div>
 		<!--//end loading bar\\-->
-      	<div id="joinraffle-btn"><button class="cupid-green">Join Raffle</button></div>
    	  </div>
       <!--end wrapper-->
 	<!--end Navigation header-->

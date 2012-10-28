@@ -60,8 +60,8 @@ ul img {border:none;}
 /*end slideshow elements----------------------------------------------*/
 #joinraffle-btn {
 	position: absolute;
-	left: 753px;
-	top: 488px;
+	left: 750px;
+	top: 388px;
 	width: 130px;
 	height: 79px;
 	z-index: 5;
@@ -130,17 +130,27 @@ button.cupid-green:hover {
 }
 #clock_n_join {
 	position: absolute;
-	left: 482px;
-	top: 38px;
+	left: 468px;
+	top: 34px;
 	width: 580px;
 	height: 127px;
 	z-index: 23;
 }
-#countbox1 {position:absolute;left:90px;top:2px;width:474px;height:87px;font-size:46px;font-family:"MP_bold";word-spacing:15px;z-index:10;}
+#countbox1 {
+	position: absolute;
+	left: 90px;
+	top: 14px;
+	width: 474px;
+	height: 87px;
+	font-size: 46px;
+	font-family: "MP_bold";
+	word-spacing: 15px;
+	z-index: 10;
+}
 #weeks {position:absolute;left:31px;top:104px;width:65px;height:26px;z-index:22;}
 #days {
 	position: absolute;
-	left: 186px;
+	left: 185px;
 	top: 42px;
 	width: 56px;
 	height: 28px;
@@ -151,7 +161,7 @@ button.cupid-green:hover {
 }
 #hours {
 	position: absolute;
-	left: 260px;
+	left: 258px;
 	top: 42px;
 	width: 63px;
 	height: 30px;
@@ -186,11 +196,11 @@ button.cupid-green:hover {
 
 /*--progressbar----------------------------------------------------------------------*/
 #progressBar {
-	text-align:left;
+	text-align: left;
 	position: absolute;
-	left: -6px;
-	top: 486px;
-	width: 737px;
+	left: 26px;
+	top: 509px;
+	width: 738px;
 	height: 52px;
 	z-index: 22;
 }
