@@ -57,9 +57,9 @@
 		<title>Raffleize | Home</title>
         
 <!--style sheets-->
+        <link rel='stylesheet' id='style-css'  href="site-wide/functions/css/diapo.css" type='text/css' media='all' /> 
         <link rel="stylesheet" type="text/css" href="site-wide/functions/css/globalR.css" />
         <link rel="stylesheet" type="text/css" href="site-wide/functions/css/homeR.css" /> 
-        <link rel='stylesheet' id='style-css'  href="site-wide/functions/css/diapo.css" type='text/css' media='all' /> 
        
 <!--javascripts to load
         <script type="text/javascript" src="site-wide/functions/js/jquery-1.3.1.min.js"></script> -->
@@ -412,9 +412,9 @@ section {
                         </div>
                     </div>
                     <span>
-                    <li style="color:#FFF;"><a href="javascript:LogDispOn()">Login</a></li><!--login buton-->
-                	<li><a href="javascript:RegDispOn()">Signup</a></li><!--register button-->
-                	<div id="welcomeDiv"><a href="userHome.php"><?php echo $welcomeMessage ?></a></div>
+                    	<li style="color:#FFF;"><a href="javascript:LogDispOn()">Login</a></li><!--login buton-->
+               		<li><a href="javascript:RegDispOn()">Signup</a></li><!--register button-->
+                		<div id="welcomeDiv"><a href="userHome.php"><?php echo $welcomeMessage ?></a></div>
                     </span>
                  </li>
              </ul>
@@ -427,58 +427,61 @@ section {
 	
       <!--sharing div-->
 
-            <!--end sharing div-->
-                        
-            <!--slideshow-->
-   
-   	  <div style="overflow:hidden; width:960px; margin: 100px auto; padding:0 20px;"> 
-        <div class="pix_diapo">
-				
-                    <div data-time="8000">
-                        <img src="site-wide/images/content/megamind1048.jpg">
-                        <div class="caption elemHover fadeIn">
-					    <p class="title">$10 iTunes Gift Card</p></ br>
-					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. </p>
-					    <hr noshade size="2" width="298">
-					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
-				    </div>
-				    <span class="elemHover fadeIn"><a class="button large green" href="javascript:joinraffle();">Enter to Win</a></span>
-				    <div id="social">
-					    <a href="#"><div id="twitter"></div></a>
-					    <a href="#"><div if="facebook"></div></a>
-				    </div>
-                    </div>
-				
-                    <div data-time="8000">
-                        <img src="site-wide/images/content/megamind_07.jpg">
-                        <div class="caption elemHover fadeIn">
-					    <p class="title">$15 Fandango Gift Card</p>
-					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
-					    <hr noshade size="2" width="298">
-					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
-                        </div>
-				    <span class="elemHover fadeIn"><a class="button large green"  href="javascript:joinraffle();">Enter to Win</a></span>
-                    </div>
-				
-                    <div data-time="8000">
-                        <img src="site-wide/images/content/wall-e.jpg">
-                        <div class="caption elemHover fadeIn">
-					    <p class="title">8 GB iPod Touch</p>
-					    <p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
-					    <hr noshade size="2" width="298">
-					    <p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
-                        </div>
-				    <span class="elemHover fadeIn"><a class="button large green"  href="javascript:joinraffle();">Enter to Win</a></span>
-                    </div>
-                    
-
-                    
-               </div><!-- #pix_diapo -->
-                
-        </div>
-
-	  <!--end slideshow-->
+      <!--end sharing div-->
+      <section>                  
+      <!--slideshow-->
+	<div style="overflow:hidden; width:960px; margin: 0px auto; padding:0; z-index:1;">
+     
+        <!--diapo slideshow-->
+        <div class="pix_diapo" style="z-index:1;">
+        	<!--set one -->
+            <div data-time="8000">
+            	<img src="site-wide/images/content/megamind1048.jpg">
+                <div class="caption elemHover fadeIn"><!--content 1-->			
+                	<p class="title2">$10 iTunes Gift Card</p></ br>
+					<p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. </p>
+					<hr noshade size="2" width="298" />
+					<p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+                    <span class="elemHover fadeIn" style="margin-top:40px;"><a class="button large green" href="javascript:joinraffle();">Enter to Win</a></span>
+            	</div><!--end content 1 -->
+	 		
+            	<div id="social">
+					<a href="#"><div id="twitter"></div></a>
+					<a href="#"><div if="facebook"></div></a>
+				</div>
+            </div>
+			<!--end set one-->
             
+            <!--set two-->
+			<div data-time="8000">
+            	<img src="site-wide/images/content/megamind_07.jpg">
+                <div class="caption elemHover fadeIn">
+					<p class="title2">$15 Fandango Gift Card</p>
+					<p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
+					<hr noshade size="2" width="298">
+					<p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+                    <span class="elemHover fadeIn" style="margin-top:40px;"><a class="button large green" href="javascript:joinraffle();">Enter to Win</a></span>
+                </div>
+			</div>
+			<!--end set two-->
+            
+            <!--set three-->	
+            <div data-time="8000">
+            	<img src="site-wide/images/content/wall-e.jpg">
+                <div class="caption elemHover fadeIn">
+					<p class="title2">8 GB iPod Touch</p>
+					<p class="descrip">Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here. Short prize descrription goes here.</p>
+					<hr noshade size="2" width="298">
+					<p class="status">This prize is locked, keep sharing the raffle to ensure the prizes you want are unlocked!</p>
+                    <span class="elemHover fadeIn" style="margin-top:40px;"><a class="button large green" href="javascript:joinraffle();">Enter to Win</a></span>
+                </div>
+          	</div>
+            <!--end set three-->
+		</div><!-- end diapo -->
+      
+	</div>
+	<!--end slideshow-->
+     </section>       
 		<!--/countdown clock\-->
 		<div id="clock_n_join">
 			<div id="countbox1"></div>

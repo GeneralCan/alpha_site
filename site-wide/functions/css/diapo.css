@@ -1,8 +1,6 @@
 @import "fonts.css"; 
 
 .pix_diapo {
-	position: absolute;
-	top:40px;
 	background: #000;
 	-moz-box-shadow: 0 3px 6px #000;
 	-webkit-box-shadow: 0 3px 6px #000;
@@ -10,8 +8,8 @@
 	height: 470px;
 	margin: 0 10px;
 	overflow: hidden;
+	position: relative;
 	width: 940px;
-	z-index:10;
 }
 .pix_diapo > div {
 	display: none;
@@ -104,8 +102,8 @@
 
 /**** button ***/
 
-.button {
-	position:relative;
+.button {;
+	margin-top:auto;
 	cursor:pointer;
 	font-family: "MP_semibold";
 	font-size: 36px;
@@ -153,19 +151,18 @@ a.button {outline:0;}
 /**** end button ****/
 
 /**** caption ****/
-.title {
+.title2 {
 	font-family: "MP_Bold";
 	font-size: 30px;
 	color: #fff;
-	margin-top: 90px;
+	margin-top: 80px;
 	line-height: 1em;
 }
 
 .descrip {
-	margin-top: -20px;
+	margin-top: 5px;
 	font-family: "MP_Regular";
 	font-size: 18px;
-	margin-top: 10px;
 	color: #fff;
 	line-height: 1.3em;
 }
@@ -173,15 +170,7 @@ a.button {outline:0;}
 .status {
 	font-family: "MP_italic";
 	font-size: 18px;
-	margin-top: 40px;
 	color: #fff;
 	line-height: 1.3em;
 }
 /**** end caption ****/
-
-
-
-
-
-
-

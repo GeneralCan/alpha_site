@@ -6,7 +6,7 @@
 	var defaults = {
 		selector			: 'div',	//target element
 		
-		fx					: 'random',
+		fx					: 'simpleFade',
 //'random','simpleFade','curtainTopLeft','curtainTopRight','curtainBottomLeft','curtainBottomRight','curtainSliceLeft','curtainSliceRight','blindCurtainTopLeft','blindCurtainTopRight','blindCurtainBottomLeft','blindCurtainBottomRight','blindCurtainSliceBottom','blindCurtainSliceTop','stampede','mosaic','mosaicReverse','mosaicRandom','mosaicSpiral','mosaicSpiralReverse','topLeftBottomRight','bottomRightTopLeft','bottomLeftTopRight','bottomLeftTopRight','scrollLeft','scrollRight','scrollTop','scrollBottom','scrollHorz'
 		
 //you can also use more than one effect: 'curtainTopLeft, mosaic, bottomLeftTopRight'
@@ -29,7 +29,7 @@
 		
 		loaderBgColor		: '#222222', 
 		
-		pieDiameter			: 50,
+		pieDiameter			: 20,
 		
 		piePosition			: 'top:5px; right:5px',	//this option accepts any CSS value
 		
@@ -63,7 +63,7 @@
 		
 		mobilePagination	: true,	//true, false. It enables the pagination numbers on mobile devices
 		
-		thumbs				: true,	//true, false. It shows the thumbnails (if available) when the mouse is on the pagination buttons. Not available for mobile devices
+		thumbs				: false,	//true, false. It shows the thumbnails (if available) when the mouse is on the pagination buttons. Not available for mobile devices
 		
 		hover				: true,	//true, false. Puase on state hover. Not available for mobile devices
 		
@@ -240,7 +240,7 @@
 					$('#pix_prev, #pix_next').animate({opacity:1},200);
 				});
 				elem.live('vmouseout',function(){
-					$('#pix_prev, #pix_next').delay(500).animate({opacity:0},200);
+					$('#pix_prev, #pix_next').delay(2000).animate({opacity:0},200);
 				});
 			} else {
 				elem.hover(function(){

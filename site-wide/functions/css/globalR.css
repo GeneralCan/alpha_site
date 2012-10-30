@@ -13,6 +13,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 /*body styles and settings */
 body {
+	overflow:hidden;
 	text-align: center;
 	background-image:url(../../images/subtle_freckles.png)
 }
@@ -52,8 +53,8 @@ a {text-decoration: none; color:inherit;}
 	background-image: url(../../images/concrete_wall.png);
 	color: #777;
 	position: absolute;
-	left: 1050px;
-	top: 32px;
+	left: 1106px;
+	top: 30px;
 	width: 199px;
 	height: 33px;
 	z-index: 26;
